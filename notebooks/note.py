@@ -58,5 +58,10 @@ data=pd.read_csv("data/Clean_Dataset.csv")
 
 # encoded =encoder.fit_transform(data[non_ordinale])
 # print( encoded)
-import sys
-print(sys.executable)
+# import sys
+# print(sys.executable)
+import joblib
+model_loaded = joblib.load("model.joblib")
+y_pred_loaded = model_loaded.predict(X_test)
+
+print(y_pred_loaded[:5])
