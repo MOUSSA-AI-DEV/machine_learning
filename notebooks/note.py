@@ -32,29 +32,31 @@ data=pd.read_csv("data/Clean_Dataset.csv")
 
 
 
-from sklearn.preprocessing import OneHotEncoder
-ordinal=[
-    "class",
-    "stops",
-]
-non_ordinale=[
-    "destination_city",
-    "airline",
-   "source_city",
-   "departure_time",
-   "arrival_time",
+# from sklearn.preprocessing import OneHotEncoder
+# ordinal=[
+#     "class",
+#     "stops",
+# ]
+# non_ordinale=[
+#     "destination_city",
+#     "airline",
+#    "source_city",
+#    "departure_time",
+#    "arrival_time",
 
 
-]
+# ]
 
 
 
 
-encoder=OneHotEncoder(
-    handle_unknown="ignore",
-     sparse_output=False
-)
+# encoder=OneHotEncoder(
+#     handle_unknown="ignore",
+#      sparse_output=False
+# )
 
 
-encoded =encoder.fit_transform(data[non_ordinale])
-print( encoded)
+# encoded =encoder.fit_transform(data[non_ordinale])
+# print( encoded)
+import sys
+print(sys.executable)
